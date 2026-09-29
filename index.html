@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
-        window.location.href = "https://rtsfinanciial.fillout.com/services";
+        // Forwards whatever query parameters this page was opened with
+        // (e.g. ?company_name=...&DOT_Number=...) straight through to the
+        // Fillout form, so the form arrives pre-filled for this carrier.
+        var params = window.location.search;
+        window.location.href = "https://rtsfinanciial.fillout.com/services" + params;
     </script>
 </head>
 <body>
